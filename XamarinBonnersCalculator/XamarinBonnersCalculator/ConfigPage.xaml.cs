@@ -18,7 +18,7 @@ namespace XamarinBonnersCalculator
         
         public ConfigPage()
         {
-            InitializeComponent();
+            InitializeComponent();//testando primeiro commit
             UserPreferencesGet();
             GetTempDados();
             EmptyField();
