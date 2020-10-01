@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UnitTestProject1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="NormalBonnerValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.045</Value>
+    </Setting>
+    <Setting Name="OverBonnerValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.047</Value>
+    </Setting>
+    <Setting Name="NormalCoverValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="OverCoverValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PercentLess" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="PercentKilo2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">75</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

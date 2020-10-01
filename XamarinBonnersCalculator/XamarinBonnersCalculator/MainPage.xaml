@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinBonnersCalculator.MainPage"
+             xmlns:behaviorPack="clr-namespace:Xamarin.Forms.BehaviorValidationPack;assembly=Xamarin.Forms.BehaviorValidationPack">
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="Azure">
+            <!-- Place new controls here -->
+            <Label Text="Boning Calculator" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+           FontSize="Medium"/>
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="KiloTotal"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                <Entry x:Name="KiloTotal" 
+                   Keyboard="Numeric"
+                   Grid.Row="0"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   BackgroundColor="White"/>
+
+                    <Label Text="Normal Time"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+                    <Entry x:Name="NormalTimeH" 
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                MaxLength="5"
+                Keyboard="Numeric"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White">
+                        <Entry.Behaviors>
+
+                            <behaviorPack:MaskedBehavior Mask="XX:XX" />
+                        </Entry.Behaviors>
+
+                    </Entry>
+
+                    <Label Text="Over Time"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+
+
+
+                <Entry x:Name="OverTimeH" 
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                MaxLength="5"
+                Keyboard="Numeric"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White">
+                    <Entry.Behaviors>
+                        
+                        <behaviorPack:MaskedBehavior Mask="XX:XX" />
+                    </Entry.Behaviors>
+                    
+                </Entry>
+                
+
+
+
+                <Label Text="Qt Kilo1"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                <Entry x:Name="QtBonnersFullK1" 
+               Keyboard="Numeric"
+               MaxLength="2"
+               Grid.Row="3"
+               Grid.ColumnSpan="2"
+               Grid.Column="2"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="White"/>
+                <Label Text="Qt Kilo2"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                <Entry x:Name="QtBonnersFullK2" 
+               Keyboard="Numeric" 
+               MaxLength="2"
+               Grid.Row="4"
+               Grid.ColumnSpan="2"
+               Grid.Column="2"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="White"/>
+            </Grid>
+            <Grid Margin="20,35,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+            <Button Text="Part Time" Clicked="ButtonPage1_ClickedAsync"/>
+            <Button Text="Config" Clicked="ButtonConfig_ClickedAsync"/>
+            <Button x:Name="BtnEnter" Text="Enter" Clicked="BtnEnter_Clicked" />
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

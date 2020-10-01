@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinBonnersCalculator.ConfigPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="Azure">
+            <Label Text="Set Values"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"/>
+            
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Time Value"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                    <Entry x:Name="NormalTimeValue" 
+                   MaxLength="6" 
+                   Keyboard="Numeric"
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                   VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+                <Label Text="Over Time Value"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                <Entry x:Name="OverTimeValue"  
+                   MaxLength="6" 
+                   Keyboard="Numeric"
+                   Grid.Row="1"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+                <Label Text="Cover Time Value"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                <Entry x:Name="CoverTimeValue" 
+                   MaxLength="5" 
+                   Keyboard="Numeric"
+                       Grid.Row="2"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+                <Label Text="Cover Over Value"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                    <Entry x:Name="CoverOverValue" 
+                   MaxLength="5" 
+                   Keyboard="Numeric"
+                           Grid.Row="3"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+                <Label Text="Percent K2"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                    <Entry x:Name="PercentK2"  
+                   MaxLength="2" 
+                   Keyboard="Numeric"
+                           Grid.Row="4"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+                <Label Text="Percent Less"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+                    <Entry x:Name="PercentLess"  
+                   MaxLength="2" 
+                   Keyboard="Numeric"
+                           Grid.Row="5"
+                           Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                HorizontalTextAlignment="Center"
+                BackgroundColor="White"/>
+            </Grid>
+
+            <Button x:Name="btnMainPage" Text="Main Page" Clicked="BtnMainPage_ClickedAsync" />
+            <Button x:Name="btnSavePreferences" Text="Save Configuration" Clicked="BtnSavePreferences_Clicked" />
+                <!--Button x:Name="btnConfigSave" Text="ConfigSave" Clicked="btnConfigSave_Clicked" />
+                <Button x:Name="btnPartialTimeP1" Grid.Column="1" Text="Cover/Bon_Partial" Clicked="btnPartialTimeP1_Clicked"/>-->
+
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

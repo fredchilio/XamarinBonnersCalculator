@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinBonnersCalculator.AnswarePage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="Azure">
+                <Label Text="Values Calculated"
+                FontSize="Medium"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Grid VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+            <Label Text="Kilo Total" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="1"/>
+            <Label x:Name="kiloTotal" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="1" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+            <Label x:Name="textPercentLess" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="2"/>
+                <Label x:Name="TotalPercentLess" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="2" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+                <Label Text="Normal Time" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="3"/>
+            <Label x:Name="NormalTime" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="3" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+            <Label Text="Over Time" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="4"/>
+            <Label x:Name="OverTime" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="4" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+            <Label Text="Total Value" TextColor="black" 
+                    FontAttributes="Bold" Grid.Column="0" Grid.Row="5"/>
+            <Label x:Name="TotalValue" TextColor="black"    
+                    FontAttributes="Bold" Grid.Column="1" Grid.Row="5" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+                    <!--Label Text="Cover" TextColor="black" FontSize="Medium"
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="6"/>
+                    <Label x:Name="cover" TextColor="black" FontSize="Medium"
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="6" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+                    <Label Text="Total  Less Cover" TextColor="black" FontSize="Medium"
+                    FontAttributes="Bold" Grid.Column="0" Grid.Row="7"/>
+            <Label x:Name="TotalLessCover" TextColor="black" FontSize="Medium"
+                    FontAttributes="Bold" Grid.Column="1" Grid.Row="7" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/-->
+
+
+
+
+                    <Label Text="Kilo1" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="8"/>
+            <Label x:Name="Kilo1" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="8" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+                    <Label Text="Kilo2" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="0" Grid.Row="9"/>
+            <Label x:Name="kilo2" TextColor="black" 
+                   FontAttributes="Bold" Grid.Column="1" Grid.Row="9" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+                    <Label Text="Kilo1 Partial" TextColor="black" 
+                    FontAttributes="Bold" Grid.Column="0" Grid.Row="10"/>
+            <Label x:Name="Kilo1Partial" TextColor="black" 
+                    FontAttributes="Bold" Grid.Column="1" Grid.Row="10" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+                    <Label Text="Kilo2 Partial" TextColor="black" 
+                    FontAttributes="Bold" Grid.Column="0" Grid.Row="11"/>
+            <Label x:Name="Kilo2Partial" TextColor="black" 
+                    FontAttributes="Bold" Grid.Column="1" Grid.Row="11" BackgroundColor="White" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+
+            
+                
+            </Grid>
+                <Button Text="Main Menu" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
